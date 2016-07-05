@@ -1,0 +1,13 @@
+{
+  "name": "gabriel-correa",
+  "description": "My personal website",
+  "version": null,
+  "private": true,
+  "devDependencies": {
+    "less": "~2.6.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-less":   "~0.8.2",
+    "grunt-contrib-watch":  "~1.0.0",
+    "grunt-contrib-concat": "~1.0.0"
+  }
+}
