@@ -30,7 +30,7 @@
 		display: block;
 	}
 	
-	.menu li a span:last-child {
+	.menu li a .text {
 		display: none;
 	}
 
