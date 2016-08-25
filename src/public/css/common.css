@@ -105,18 +105,18 @@
 	opacity: 1;
 }
 
-.menu li a svg {
+.menu li a .icon img {
 	width: 15px;
 	height: 15px;
 }
 
-.menu li a svg path {
+.menu li a .icon img path {
 	fill: #000;
 }
 
-.menu li a:hover svg path,
-a:hover svg circle,
-a:hover svg polygon {
+.menu li a:hover .icon img,
+a:hover .icon img circle,
+a:hover .icon img polygon {
 	fill: #FFF;
 }
 

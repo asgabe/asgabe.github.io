@@ -13,14 +13,14 @@ module.exports = function(grunt) {
                     compress: false,
                 },
                 files: {
-                    "src/public/css/main.css": "src/assets/less/source.less"
+                    "src/public/css/source.css": "src/assets/less/source.less"
                 }
             }
         },
         watch: {
             less: {
-                files: ['src/assets/less/source.less'],
-                tasks: ['less']
+                files: ['src/assets/less/*.less'],
+                tasks: ['less'],
             }
         }
     });
