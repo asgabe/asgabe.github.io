@@ -1,5 +1,5 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
+var gulp  = require('gulp');
+var less  = require('gulp-less');
 var watch = require('gulp-watch');
 
 var paths = {

@@ -1,28 +1,24 @@
-(function() {
-	function sizeOfViewPort() {
-		var viewport = document.querySelectorAll('.viewport');
-		var h = window.innerHeight;
 
-		for (var i = 0; i < viewport.length; i++) {
-			viewport[i].style.height = h + 'px';
-		}
-	};
+var els = {
+	view: null,
+	func: null
+}
 
-	function scrollCurrent() {
-		var scroll = document.body;
-		console.log(scroll);
-		if (scroll >= 0 && scroll < 811) {
-			console.log(scroll);
-			window.history.pushState('localhost:3000', '#home');
-		} else if(scroll > 810) {
-			console.log(scroll, '#about');
+var init = {
+	viewport: function() {
+		els.view = document.querySelectorAll('.viewport');
+
+		for (var i = 0; i < els.view.length; i++) {
+			els.view[i].style.height = window.innerHeight + 'px';
 		}
 	}
+}
+
+init.viewport();
 
 
-	sizeOfViewPort();
 
-	window.addEventListener('resize', function(){
-		sizeOfViewPort();
-	});
-})();
+window.addEventListener('resize', function() {
+	init.viewport();
+});
+
