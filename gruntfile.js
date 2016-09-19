@@ -1,11 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        concat: {
-            dist: {
-                src: ['src/public/css/home.css', 'src/public/css/main.css'],
-                dest: 'src/public/css/source.css'
-            }
-        },
+
         less: {
             development: {
                 options: {
