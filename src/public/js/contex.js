@@ -1,24 +1,26 @@
+!function(scope) {
+	'use strict';
 
-var els = {
-	view: null,
-	func: null
-}
+	var obj  = {};
 
-var init = {
-	viewport: function() {
-		els.view = document.querySelectorAll('.viewport');
+	obj.viewport = function () {
+		var view = document.querySelectorAll('.viewport');
 
-		for (var i = 0; i < els.view.length; i++) {
-			els.view[i].style.height = window.innerHeight + 'px';
+		for (var i = 0; i < view.length; i++) {
+			view[i].style.height = window.innerHeight + 'px';
 		}
 	}
-}
 
-init.viewport();
+	obj.init = function () {
+		obj.viewport();
+	}
 
+	console.log(scope);
 
+	window.addEventListener('resize', function() {
+		obj.viewport();
+	});
 
-window.addEventListener('resize', function() {
-	init.viewport();
-});
+	obj.init();
+}(this);
 
