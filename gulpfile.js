@@ -24,8 +24,9 @@ gulp.task('webserver', function() {
 	return gulp.src('./')
 		.pipe(webserver({
 			host: '0.0.0.0',
+			port: '8000',
 			directoryListing: true,
-			livereload: true
+			livereload: false
 		}));
 });
 

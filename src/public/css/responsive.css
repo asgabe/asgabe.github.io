@@ -1,46 +1,18 @@
-@media (max-width: 639px) {
+@media (min-width: 360px) and (max-width: 599px) {
 	.content {
-		width: 300px;
-	}
-
-	#title h1 {
-		left: 30%;
+		width: 340px;
 	}
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 719px) {
 	.content {
-		width: 620px;
+		width: 580px;
 	}
+}
 
-	#title h1 {
-		left: 25%;
-	}
-
-	.menu li a {
-		width: 35px;
-		height: 35px;
-	}
-
-	.menu li a:hover {
-		padding: 8px;
-	}
-
-	.menu li a .icon {
-		display: block;
-	}
-	
-	.menu li a .text {
-		display: none;
-	}
-
-	.menu ul {
-		float: left;
-		width: 36px;
-	}
-
-	.menu ul li {
-		float: left;
+@media (min-width: 720px) and (max-width: 1023px) {
+	.content {
+		width: 700px;
 	}
 }
 
@@ -55,3 +27,64 @@
 		width: 1260px;
 	}
 }
+
+
+
+
+// @media (max-width: 639px) {
+// 	.content {
+// 		width: 300px;
+// 	}
+
+// 	#title h1 {
+// 		left: 30%;
+// 	}
+// }
+
+// @media (min-width: 640px) and (max-width: 1023px) {
+// 	.content {
+// 		width: 620px;
+// 	}
+
+// 	#title h1 {
+// 		left: 25%;
+// 	}
+
+// 	.menu li a {
+// 		width: 35px;
+// 		height: 35px;
+// 	}
+
+// 	.menu li a:hover {
+// 		padding: 8px;
+// 	}
+
+// 	.menu li a .icon {
+// 		display: block;
+// 	}
+	
+// 	.menu li a .text {
+// 		display: none;
+// 	}
+
+// 	.menu ul {
+// 		float: left;
+// 		width: 36px;
+// 	}
+
+// 	.menu ul li {
+// 		float: left;
+// 	}
+// }
+
+// @media (min-width: 1024px) and (max-width: 1279px) {
+// 	.content {
+// 		width: 960px;
+// 	}
+// }
+
+// @media (min-width: 1280px) {
+// 	.content {
+// 		width: 1260px;
+// 	}
+// }
