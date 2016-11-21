@@ -12,10 +12,10 @@ gulp.task('watch', function() {
 });
 
 gulp.task('less', function() {
-	return gulp.src('src/assets/less/source.less')
+	gulp.src('src/assets/less/source.less')
 		.pipe(less({
 			paths: ['src/assets/less'],
-			compress: false,
+			compress: true,
 		}))
 		.pipe(gulp.dest('src/public/css/'));
 });

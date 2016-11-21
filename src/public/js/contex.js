@@ -15,8 +15,6 @@
 		obj.viewport();
 	}
 
-	console.log(scope);
-
 	window.addEventListener('resize', function() {
 		obj.viewport();
 	});
