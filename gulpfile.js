@@ -4,7 +4,7 @@ var watch = require('gulp-watch');
 var webserver = require('gulp-webserver');
 
 var paths = {
-	less: 'src/assets/less/*.less'
+	less: 'src/assets/stylesheet/*.less'
 };
 
 gulp.task('watch', function() {
@@ -12,9 +12,9 @@ gulp.task('watch', function() {
 });
 
 gulp.task('less', function() {
-	gulp.src('src/assets/less/source.less')
+	gulp.src('src/assets/stylesheet/source.less')
 		.pipe(less({
-			paths: ['src/assets/less'],
+			paths: ['src/assets/stylesheet'],
 			compress: true,
 		}))
 		.pipe(gulp.dest('src/public/css/'));
