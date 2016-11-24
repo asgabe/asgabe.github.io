@@ -17,7 +17,7 @@ gulp.task('less', function() {
 			paths: ['src/assets/stylesheet'],
 			compress: true,
 		}))
-		.pipe(gulp.dest('src/public/css/'));
+		.pipe(gulp.dest('src/public/stylesheet/'));
 });
 
 gulp.task('webserver', function() {

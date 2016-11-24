@@ -3,10 +3,14 @@
   "description": "My personal website",
   "version": null,
   "private": true,
+  "scripts": {
+    "start": "grunt web_server"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.1.0",
-    "gulp-watch": "^4.3.9",
-    "gulp-webserver": "^0.9.1"
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-http-server": "^2.0.0",
+    "grunt-web-server": "^1.2.3"
   }
 }
