@@ -48,7 +48,12 @@
 .viewport {
   width: 100%;
 }
-#header .menu a h1 {
+#header {
+  width: 100%;
+  float: left;
+  position: fixed;
+}
+#header .title h1 {
   top: 75px;
   left: 22%;
   color: #FFF;
