@@ -1,29 +1,17 @@
-/* Font's */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
 
-@font-face {
-    font-family: 'Poppins Light';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/Poppins-Light.ttf") format("truetype");
+/* Color's */
+
+@black: #000000;
+@white: #FFFFFF;
+
+@light      : 300;
+@regular    : 400;
+@medium     : 500;
+@semi-bold  : 600;
+@bold       : 700;
+
+.font-family (@weight: @medium) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: @weight;
 }
-
-@font-face {
-    font-family: 'Poppins Medium';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/Poppins-Medium.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: 'Poppins Bold';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/Poppins-Bold.ttf") format("truetype");
-}
-
-// @font-face {
-//     font-family: 'OpenSans Bold';
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url("../public/fonts/OpenSans-Bold.ttf") format("truetype");
-// }

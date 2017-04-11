@@ -12,10 +12,10 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     paths: ["src/public/stylesheet"],
-                    compress: false,
+                    compress: true,
                 },
                 files: {
-                    "src/public/stylesheet/source.css": "src/assets/stylesheet/source.less"
+                    "src/public/stylesheet/source.css": "src/assets/stylesheet/_source.less"
                 }
             }
         },
